@@ -25,7 +25,6 @@ h2::first-letter {
 ul {
     display: table;
     border-collapse: collapse;
-    width: 100%;
 }
 
 li {
@@ -50,6 +49,7 @@ li a {
 .sub {
 	margin: 0;
 	padding: 0;	
+	display: none;
 }
 
 .sub li {
@@ -62,14 +62,9 @@ li a {
 	width: 175px;
 }
 
-.sub {
-	display: none;
-	position: absolute;
-	width: auto;
-}
-
 .list-element:hover .sub {
 	display: block;	
+	position: absolute;
 }
 
 .list-element:hover > a {
@@ -79,13 +74,6 @@ li a {
 .link:hover {
 	background-color: #afafaf;
 }
-
-
-
-
-
-
-
 
 
 
