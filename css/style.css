@@ -135,7 +135,12 @@ div {
 }
 
 #menu .two ul ul ul ul {
-    left: -175px;
+    left: -100px;
+    top: -89px;
+}
+
+#menu .two ul ul ul ul a {
+    width: 100px;
 }
 
 .center-text {
@@ -154,8 +159,6 @@ div {
     text-align: right;
 }
 
-
-/* 3 */
 /*TODO make social clickable*/
 .home {
       background: url(../img/home.png) no-repeat 20px 7px;
@@ -172,5 +175,21 @@ div {
 
 .social {
     background: url(../img/social.png) no-repeat 160px center;
+}
+
+/*<<<<<<<<<<<<<<<<<TABLES>>>>>>>>>>>>>*/
+
+table {
+    width: 100%;
+    background-color: #cfcfcf;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 2px solid white;
+    padding: 4px;
+}
+
+#t2 {
 }
 
