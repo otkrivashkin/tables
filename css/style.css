@@ -53,7 +53,9 @@ li a {
 }
 
 .sub li {
-	display: inline;
+	display: table-row;
+    left: 30px;
+    right:0;
 }
 
 .sub a {
@@ -67,6 +69,11 @@ li a {
 	position: absolute;
 }
 
+ul .last a {
+    position: relative;
+    right: 25%;
+}
+
 .list-element:hover > a {
 	background-color: #afafaf;	
 }
@@ -74,7 +81,6 @@ li a {
 .link:hover {
 	background-color: #afafaf;
 }
-
 
 
 
