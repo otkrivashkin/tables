@@ -20,18 +20,22 @@ h2::first-letter {
 	color: #ff0000;
 }
 
-/* MAIN-MENU */
+div {
+    margin: 30px 0;
+}
+/* MENU-FIRST */
 
-ul {
+#menu ul {
     display: table;
     border-collapse: collapse;
+    width: 100%;
 }
 
-li {
+#menu li {
     display: table-cell;
 }
 
-li a {
+#menu li a {
     display: block;
     text-decoration: none;
     padding: 10px;
@@ -39,49 +43,83 @@ li a {
 	background-color: #cfcfcf;	
 }
 
-.stub {
+#menu .stub {
 	width: 33%;
 	text-indent: -9999px;
 }
 
 /* SUB-MENU */
 
-.sub {
-	margin: 0;
+#menu ul ul {
+/*	margin: 0;*/
 	padding: 0;	
 	display: none;
 }
 
-.sub li {
+#menu ul ul li {
 	display: table-row;
-    left: 30px;
-    right:0;
 }
 
-.sub a {
-	display: block;
-	margin: 2px 0;
+#menu ul ul a {
+	margin: 1px 0;
 	width: 175px;
 }
 
-.list-element:hover .sub {
-	display: block;	
+#menu li:hover ul {
+	display: table-cell;	
 	position: absolute;
 }
 
-ul .last a {
+/*последний элемент в меню, что бы не вылезало за границы батьки*/
+#menu .last a {
     position: relative;
-    right: 25%;
+    right: 38%;
 }
 
-.list-element:hover > a {
+#menu ul li:hover > a {
 	background-color: #afafaf;	
 }
 
-.link:hover {
+#menu ul ul a:hover, #menu ul ul ul a:hover, #menu ul ul ul ul a:hover {
 	background-color: #afafaf;
 }
 
+/* MENU-SECOND */
+#menu .two ul ul ul {
+    display: none;
+}
 
+#menu .two ul ul ul ul > li {
+    display: none;
+}
 
+#menu .two ul ul li:hover ul {
+    display: block;
+    position: relative;
+    height: 0;
+}
 
+#menu .two ul ul ul li:hover li {
+    display: table-row;
+}
+
+#menu .two ul ul ul {
+    left: 175px;
+    top: -45px;
+}
+
+#menu .two ul ul ul ul {
+    left: -175px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.right-text {
+    text-align: right;
+}
