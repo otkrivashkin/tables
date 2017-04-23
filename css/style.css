@@ -1,28 +1,30 @@
 * {
     max-width: 880px;
     margin: auto;
-	color: #000;
-	font-size: 20px;
-	box-sizing: border-box;
+    color: #000;
+    font-size: 20px;
+    box-sizing: border-box;
 }
 
 .grey-bg {
-	background-color: #cfcfcf;
+    background-color: #cfcfcf;
 }
 
 h2 {
     font-size: 48px;
     margin-bottom: 30px;
-	color: #0051ac;
+    color: #0051ac;
 }
 
 h2::first-letter {
-	color: #ff0000;
+    color: #ff0000;
 }
 
 div {
     margin: 30px 0;
 }
+
+
 /* MENU-FIRST */
 
 #menu ul {
@@ -39,57 +41,64 @@ div {
     display: block;
     text-decoration: none;
     padding: 10px;
-	margin: 0 1px;
-	background-color: #cfcfcf;	
+    margin: 0 1px;
+    background-color: #cfcfcf;
 }
 
 #menu .stub {
-	width: 33%;
-	text-indent: -9999px;
+    width: 33%;
+    text-indent: -9999px;
 }
+
 
 /* SUB-MENU */
 
 #menu ul ul {
-/*	margin: 0;*/
-	padding: 0;	
-	display: none;
+    /*	margin: 0;*/
+    padding: 0;
+    display: none;
 }
 
 #menu ul ul li {
-	display: table-row;
+    display: table-row;
 }
 
 #menu ul ul a {
-	margin: 1px 0;
-	width: 175px;
+    margin: 1px 0;
+    width: 175px;
 }
 
 #menu li:hover ul {
-	display: table-cell;	
-	position: absolute;
+    display: table-cell;
+    position: absolute;
 }
 
+
 /*последний элемент в меню, что бы не вылезало за границы батьки*/
+
 #menu .last a {
     position: relative;
     right: 38%;
 }
 
-#menu ul li:hover > a {
-	background-color: #afafaf;	
+#menu ul li:hover>a {
+    background-color: #afafaf;
 }
 
-#menu ul ul a:hover, #menu ul ul ul a:hover, #menu ul ul ul ul a:hover {
-	background-color: #afafaf;
+#menu ul ul a:hover,
+#menu ul ul ul a:hover,
+#menu ul ul ul ul a:hover {
+    background-color: #afafaf;
 }
+
 
 /* MENU-SECOND */
+
 #menu .two ul ul ul {
     display: none;
 }
 
-#menu .two ul ul ul ul > li {
+#menu .two ul ul ul ul>li {
     display: none;
 }
 
@@ -116,10 +125,35 @@ div {
     text-align: center;
 }
 
-.left-text {
+#menu ul li {
+    text-align: center;
+}
+
+#menu ul ul li {
     text-align: left;
 }
 
 .right-text {
     text-align: right;
 }
+
+
+/* 3 */
+/*TODO make social clickable*/
+.home {
+      background: url(../img/home.png) no-repeat 20px 7px;
+}
+
+#menu .three .home {
+    padding-left: 50px;
+}
+
+#menu .social {
+    width: 275px;
+    background-color: #cfcfcf;
+}
+
+.social {
+    background: url(../img/social.png) no-repeat 160px center;
+}
+
