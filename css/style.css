@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-.grey-bg {
-    background-color: #cfcfcf;
-}
-
 h2 {
     font-size: 48px;
     margin-bottom: 30px;
@@ -50,6 +46,9 @@ div {
     text-indent: -9999px;
 }
 
+#menu .stub {
+    color:red;
+}
 
 /* SUB-MENU */
 
@@ -83,6 +82,24 @@ div {
 
 #menu ul li:hover>a {
     background-color: #afafaf;
+}
+
+#menu .one ul li:hover:nth-child(even) a {
+    background-color: #cfcfcf;
+}
+
+#menu .two ul ul a {
+    background-color: #c8c8fd;
+}
+
+#menu .two ul ul ul a {
+    background-color: #8fcb9c;
+    text-align: right;
+} 
+
+#menu .two ul ul ul ul a {
+    background-color: #e7a79f;
+    text-align: center;
 }
 
 #menu ul ul a:hover,
