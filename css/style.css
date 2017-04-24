@@ -10,18 +10,18 @@ h2 {
     font-size: 48px;
     margin-bottom: 30px;
     color: #0051ac;
+	margin: 40px 0;
 }
 
 h2::first-letter {
     color: #ff0000;
 }
 
-div {
-    margin: 30px 0;
-}
-
-
 /* MENU-FIRST */
+
+#menu {
+	margin: 40px 0;
+}
 
 #menu ul {
     display: table;
@@ -53,7 +53,6 @@ div {
 /* SUB-MENU */
 
 #menu ul ul {
-    /*	margin: 0;*/
     padding: 0;
     display: none;
 }
@@ -84,7 +83,7 @@ div {
     background-color: #afafaf;
 }
 
-#menu .one ul li:hover:nth-child(even) a {
+#menu .one ul:hover .stub a {
     background-color: #cfcfcf;
 }
 
@@ -187,9 +186,126 @@ table {
 
 table, td, th {
     border: 2px solid white;
-    padding: 4px;
+    padding: 12px 10px;
 }
 
-#t2 {
+th {
+	background-color: #afafaf;
 }
+
+tr:hover {
+	background-color: #afafaf;
+}
+
+td:nth-child(1) {
+	text-align: center;
+}
+
+td + td + td {
+	text-align: right;
+}
+
+
+/*SECOND TABLE*/
+
+#t2 {
+	display: table;
+	width: 100%;
+	border-spacing: 2px;
+}
+
+#t2 div {
+	display: table-row;
+	
+}
+
+#t2 span {
+	display: table-cell;
+	padding: 12px 10px;
+}
+
+#t2 div:nth-child(1) span{
+	font-weight: bold;
+	background-color: #afafaf;
+}
+
+#t2 div + div {
+	background-color: #cfcfcf;
+}
+
+#t2 span:nth-child(1) {
+	text-align: center;
+}
+
+#t2 div:nth-child(1) span + span + span {
+	text-align: center;
+}
+
+#t2 div:nth-child(2) span + span + span,
+#t2 div:nth-child(3) span + span + span,
+#t2 div:nth-child(4) span + span + span,
+#t2 div:nth-child(5) span + span + span,
+#t2 div:nth-child(6) span + span + span,
+#t2 div:nth-child(7) span + span + span {
+	text-align: right;
+}
+
+/*THIRD TABLE*/
+
+#t3 {
+	display: table;
+	width: 50%;
+	border-spacing: 2px;
+	float: left;
+	margin-bottom: 400px;
+}
+
+#t3 ul {
+	display: table-row;
+}
+
+#t3 li {
+	display: table-cell;
+	background-color: #cfcfcf;
+	padding: 12px 0;
+}
+
+.weight {
+	background: url(../img/weight.png) no-repeat 12px center;
+}
+
+.size {
+	background: url(../img/size.png) no-repeat 12px center;
+}
+
+.power {
+	background: url(../img/power.png) no-repeat 12px center;
+}
+
+.price {
+	background: url(../img/price.png) no-repeat 12px center;
+}
+
+#t3 li:nth-child(1) {
+	padding-left: 40px;
+}
+
+#t3 ul li + li {
+	width: 50%;
+	text-align: right;
+	padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
